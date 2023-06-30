@@ -1,4 +1,4 @@
-export class CreateGroupDto {
+export interface GroupsInterface{
     id: string;
     name: string;
     array_of_members: object;
