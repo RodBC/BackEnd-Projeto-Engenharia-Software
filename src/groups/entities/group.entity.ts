@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Group {
-    @Column() 
+    @PrimaryGeneratedColumn() 
     id: string;
 
     @Column()
