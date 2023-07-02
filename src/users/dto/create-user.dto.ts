@@ -11,6 +11,9 @@ export class CreateUserDto{
         {description: "the email of a given user"}
     )
     email: string;
+
+    array_of_groups: string;
+
 }
 
 
