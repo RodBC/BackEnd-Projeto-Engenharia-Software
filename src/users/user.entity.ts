@@ -10,4 +10,7 @@ export class User {
 
     @Column()
     email: string;
+
+    @Column()
+    array_of_groups: string;
 }
