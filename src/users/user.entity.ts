@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class User {
-    @PrimaryGeneratedColumn() 
+    @PrimaryGeneratedColumn()
     id: string;
 
     @Column()
@@ -13,4 +13,9 @@ export class User {
 
     @Column()
     array_of_groups: string;
+
+    constructor(user?: Partial<User>) {
+        // Preenche os valores, se fornecidos 
+        Object.assign(this, user);
+    }
 }

@@ -14,7 +14,7 @@ export const databaseProviders = [
         // database: 'postgres',
         
         entities: [
-          __dirname + '//**/*.entity{.ts,.js}',
+          __dirname + '/../**/*.entity.{ts,js}',
         ],
         // autoLoadEntities: true,
         synchronize: true,
